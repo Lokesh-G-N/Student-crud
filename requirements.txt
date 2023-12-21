@@ -1,12 +1,5 @@
-<<<<<<< HEAD
 asgiref==3.7.2
 django==3.2.10 mysqlclient
 dnspython==2.4.2
 sqlparse==0.2.4
-=======
-asgiref==3.7.2
-django==3.2.10 mysqlclient
-dnspython==2.4.2
-sqlparse==0.2.4
->>>>>>> 8d27e2928e0990667c20e945c81b7b619f242e09
 tzdata==2023.3
