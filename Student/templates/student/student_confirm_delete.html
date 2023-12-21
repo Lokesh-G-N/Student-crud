@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirm Delete</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .confirmation {
+            background-color: #ffffff;
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="confirmation">
+        <h3>Are you sure you want to delete "{{ student.name }}"?</h3>
+        <form method="post">
+            {% csrf_token %}
+            <input type="submit" value="Confirm">
+        </form>
+    </div>
+</body>
+</html>
